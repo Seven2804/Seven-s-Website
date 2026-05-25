@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <meta name="author" content="Pria Magang">
+  <Title>Trust News - Modern</Title>
+  <style>
+  body {
+    font-family: 'Product-Sans-Bold', Helvetica-Bold, sans-serif;
+    max-width: 600px;
+    margin: 0px auto;
+    padding: 15px;
+    line-height: 1.2;
+    background-color: #99bfa5;/*hijau*/
+    color: #000000;
+    text-align: justify;
+  }
+  h1 {
+    font-size: 22px;
+    margin-top: 8px;
+    line-height: 1;
+    color: #a80813;/*merah*/
+    font-family: 'SFNSDisplay-Bold', Helvetica-Bold;
+  }
+  h2 {
+    font-size: 17px;
+    line-height: 0;
+    font-family: 'SFNSDisplay-Bold', Helvetica-Bold;
+  }
+  h4 {
+    word-spacing: 10px;
+    padding: 3px;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    line-height: 1;
+    text-align: center;
+    color: #ffffff;
+    background-color: #a80813;
+  }
+  .p1 {
+    margin-top: 3px;
+    text-align: center;
+    font-size: 1px;
+     }
+  .p2 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 14px;
+     }
+  .p3 {
+    font-size: 8px;
+    background-color: hsl(60,100%,50%);
+    padding: 2px;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0px;
+  }
+  .p4 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 3px;
+    margin-top: 3px;
+    margin-left: 0px;
+    letter-spacing: 0;
+    text-align: center;
+  }
+  #mainbutton-drawer {
+    color: #ffffff;
+    width: 25px;
+    height: 18px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    cursor: pointer;
+    margin-top: 9.5px;
+    margin-right: 0px;
+    gap: 0px;
+  }
+  #drawerbutton-drawer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    flex-direction: column;
+    gap: 3px;
+    align-items: left;
+    width: 25px;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  #drawer {
+    background-color: #99bfa5;
+    position: fixed;
+    top: 0;
+    gap: 10px;
+    left: 0;
+    width: 55%;
+    height: 100%;
+    box-shadow: 5px 0px 15px rgba(0,0,0,2);
+    padding-left: 15px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    z-index: 999;
+    transform: translateX(-250px);
+    transition: 0.3s ease-in-out;
+    display: flex;
+    justify-content: top-left;
+    flex-direction: column;
+   }
+  a {
+    font-family: 'SFNSDisplay-Bold';
+    font-weight: Bolder;
+    color: #000000;
+    text-decoration: none;
+    background-color: #ffffff;
+    width: 75%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10px;
+  }
+  a.about {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 270px;
+  }
+  .h2-menu {
+    font-size: 25px;
+    color: #a80813;
+    margin-top: 33px;
+    background-color: white;
+  }
+  .drawer.buka {
+    transform: translateX(0);
+  }
+  .garis {
+    background-color: #a80813;
+    width: 92%;
+    height: 3px;
+    margin-bottom: 1px;
+    border-radius: 2px;
+    align-items: center;
+  }
+  .main-button {
+    display: flex;
+    align-items: left;
+    gap: 5px;
+  }
+  .drawer-button {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    width: 75%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
+    height: 10%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+  .container {
+    width: 90%;
+    padding: 15px;
+    display: block;
+    background-color: #ffffff;
+    margin: 0 auto;
+  }
+  @media (min-width: 768px) {
+    .container {
+    display: block;
+    min-width: 768px;
+    max-width: 700px;
+    margin: 0 auto !important;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0,0,0.1);
+    padding: 30px;
+  }}
+  </style>
+</head>
+<body>
+  <div id="drawer" class="drawer">
+    <div class="drawer-button">
+    <div id="drawerbutton-drawer">
+      <div class="garis"></div>
+      <div class="garis"></div>
+      <div class="garis"></div></div>
+      <h2 class="h2-menu">Menu</h2>
+    </div>
+    <a href="#">Home</a>
+    <a href="#">Politik</a>
+    <a href="#">Ekonomi</a>
+    <a href="#">Hukum</a>
+    <a class="about" href="#">About</a>
+  </div>
+  <div class="container">
+  <p class="p3">SCROLL TO CONTINUE WITH CONTENT</p>
+<div class="main-button">
+  <div id="mainbutton-drawer">
+  <div class="garis"></div>
+  <div class="garis"></div>
+  <div class="garis"></div>
+ <script>
+  const document.getElementById('mainbutton-drawer');
+  const document.getElementById('drawerbutton-drawer');
+  const document.getElementById('drawer');
+  const document.getElementById('drawer');
+  mainbutton-drawer.addEventListener('click',function()
+  {
+    drawer.style.transform='translateX(0)';
+  });
+  drawerbutton-drawer.addEventListener('click',function()
+  {
+    drawer.style.transform='translateX(-250px)';
+  });
+  </script>
+  </div>
+  <p class="p4">TRUST NEWS</p>
+  </div>
+  <h4><small> HOME | POLITIK | EKONOMI | SOSIAL 
+  </small></h4>
+<h1><strong>Sukses lunasin semua utang luar negerinya, Indonesia resmi akan menjadi negara maju tahun 2028!</strong></h1>
+<p class="p2">
+  <em>
+    <small style="color: #303030">by Seven | Minggu, 30 Februari 2026
+       </small>
+  </em>
+</p>
+<hr style="border: 0.5px solid #303030; margin-top: 0px; margin-bottom: 3px">
+<img src="https://cdn.setneg.go.id/_multimedia/photo/20260410/0607WhatsApp_Image_2026-04-10_at_5.01.41_PM.jpeg" width="330px">
+<hr style="border: 0.5px solid #303030; margin-top: -1px; margin-bottom: 0px">
+<p class="p1">
+  <em>Prabowo sedang bersemangat - source by sesneg.co.id
+  </em>
+</p>
+<p>
+  <strong>Jakarta  
+  </strong> - Presiden Prabowo secara resmi menyatakan Indonesia telah bebas utang luar negeri. Hal tersebut di perkuat dengan kenaikan ekonomi secara stabil dan signifikan, peningkatan kualitas hidup masyarakat, pemerataan infrastruktur, pengoptimalan sistem hukum, serta dukungan langsung terhadap inovasi anak muda Indonesia.</p>
+<p>Prabowo mengagendakan rapat tersebut guna membahas tentang penurunan nilai rupiah terhadap dominasi dollar dan kondisi ekonomi yang terus dikeluhkan para pengamat. Namun, Prabowo tetap bersikukuh, jika Indonesia masih dalam keadaan baik-baik saja.</p>
+<p>Ia bahkan menyakinkan publik melalui sikap Menteri Keuangan yang masih bisa tersenyum dan tertawa ketika disorot. Baginya, Indonesia masih mampu survive, dan dampak penurunan nilai rupiah, adalah hal yang biasa untuk terjadi.</p>
+<p>Nah, pernyataan kontroversial pun diucapkan oleh Prabowo. Dia mengatakan : <em>"Orang desa ga pake dollar kok".</em> Lantas pernyataan tersebut pun justru memancing amarah publik.</p>
+<p>Publik beranggapan, kalau pernyataan tersebut sangat keliru, mengingat Indonesia masih ketergantungan pasokan bahan impor. Yang secara tak langsung menggunakan dollar.
+  
+ 
+</p>
+    <div style="text-align: center; margin-top: 20px;">
+    <button id="tombolLike" style="padding: 10px 20px; background-color: #0f99ff; color: white; border: none; border-radius: 5px; font-weight: bold;">
+      Like
+    </button>
+    <p style="font-size: 14px; margin-top: 5px;">Total Like: <span id="angkaLike">10</span></p>
+  </div>
+    <script>
+  const mainButton=document.getElementById('mainbutton-drawer');
+  const drawerButton=document.getElementById('drawerbutton-drawer');
+  const bodydrawer=document.getElementById('drawer');
+  mainButton.addEventListener('click',function()
+  {
+    bodydrawer.style.transform='translateX(0)';
+  });
+  drawerButton.addEventListener('click',function()
+  {
+    bodydrawer.style.transform='translateX(-250px)';
+  });
+    
+    // PILAR 1: Kita bikin Variabel buat nyimpen angka hitungan like
+    let jumlahLike = 1000;
+
+    // PILAR 5: Kita bikin Function (perintah) apa yang terjadi pas tombol diklik
+    document.getElementById("tombolLike").onclick = function() {
+      
+      jumlahLike = jumlahLike + 11982; // Logika matematika: tambah 1 setiap diklik
+      
+      // Update tulisan angka di layar web secara real-time
+      document.getElementById("angkaLike").innerText = jumlahLike;
+    };
+  </script>
+  </div></div>
+</body>
+</html>

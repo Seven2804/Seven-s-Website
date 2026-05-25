@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="id"></html>
+<html>
+<head>
+  <meta charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Seven, Pria Magang, Zynxx2804, Zynnx2510">
+  <title>Seven's Website</title>
+  <style>
+  body {
+    margin: 0 auto;
+    text-align: center;
+    top: 0 auto;
+    background-color: #243e36;/*hijau-tua*/
+    line-height: px;
+    user-select: none;
+    pointer-events: auto;
+    transition: filter 0.3s ease;
+  }
+  .black-screen {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 8;
+    transition: 0.3s ease;
+    pointer-events: none;
+  }
+  .home-container {
+    width: 100%;
+    padding: 20px;
+    max-width: auto;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
+    box-shadow: 0px 10px 25px rgba(0,0,0,1);
+  }
+  .profile-pic {
+    margin: 20px auto 15px auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 0%;
+    border: 3px solid #ffbf00;/*gold*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,1);
+  }
+  .picture1 {
+    width: 138px;
+    border-radius: 20px;
+    height: 138px;
+    margin-left: -69px;
+    margin-top: 1px;
+    position: absolute;
+    ​-webkit-touch-callout: none;
+    object-fit: cover;
+    filter: brightness(60%);
+    transition: 0.3s ease;
+  }
+  .picture1:hover{
+    filter: brightness(100%);
+  }
+  .picture2 {
+    width: 138px;
+    border-radius: 20px;
+    height: 138px;
+    margin-left: -69px;
+    margin-top: 1px;
+    position: absolute;
+    display: ;
+    ​-webkit-touch-callout: none;
+    object-fit: cover;
+    object-position: 30% 0%;
+    filter: brightness(60%);
+    transition: 0.3s ease;
+  }
+  .picture2:hover{
+    filter: brightness(100%);
+  }
+  .picture3 {
+    width: 138px;
+    border-radius: 20px;
+    height: 138px;
+    margin-left: -69px;
+    margin-top: 1px;
+    position: absolute;
+    display: ;
+    ​-webkit-touch-callout: none;
+    object-fit: cover;
+    object-position: 30% 100%;
+    filter: brightness(60%);
+    transition: 0.3s ease;
+  }
+  .picture3:hover{
+    filter: brightness(100%);
+  }
+  .picture4 {
+    width: 138px;
+    border-radius: 20px;
+    height: 138px;
+    margin-left: -69px;
+    margin-top: 1px;
+    position: absolute;
+    display: ;
+    ​-webkit-touch-callout: none;
+    object-fit: cover;
+    object-position: 30% 100%;
+    filter: brightness(60%);
+    transition: 0.3s ease;
+  }
+  .picture4:hover{
+    filter: brightness(100%);
+  }
+  h1 { /*Seven's Website*/
+    font-size:38px;
+    margin-top: 10px;
+    text-align: center;
+    color: #243e36;/*hijau-tua*/
+    margin-bottom: 0px;
+    transition: 0.5s ease;
+  }
+  .h4 { /*as Zynxx2804*/
+    font-size: 15px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #243e36;
+    width: 40%;
+    height: 25px;
+    border-radius: 20px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s ease;
+    margin-top: 11px;
+  }
+  .p1 { /*welcome!*/
+    font-size: 16px;
+    color: #ffffff;
+    padding-top: px;
+    padding-bottom: px;
+    font-family: 'SFNSDisplay-Bold';
+    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: flex-start;
+    justify-content: center;
+  }
+  .p2 {/*pengangguran handal*/
+    text-align: center;
+    font-weight: bolder;
+    color: #a80813;
+    font-size: 10px;
+    margin-top: 1px;
+    font-family: 'SFNSDisplay-Bold';
+  }
+  .p3 {
+    font-weight: bolder;
+    color: ;
+    text-align: ;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .p4 {/*khusus-special-thanks*/
+    font-size: 12px;
+    font-weight: bolder;
+    margin-bottom: 3px;
+  }
+  .p5 {/*khusus-Tuhan-Ibu*/
+    font-size: 14px;
+    background-color: #FFF194;
+    border-radius: 20px;
+    width: 70%;
+    margin: 0 auto;
+    border: 20px none;
+    font-weight: bolder;
+    box-shadow: 0px 0px 5px rgba(0,0,0,1);
+    color: ;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+  }
+  .p5:hover {
+    font-size: 13px;
+    width: 65%;
+    box-shadow: 0px 0px 5px rgba(255,255,0,1);
+  }
+  .footer-text {
+    font-size: 5px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .square1 {
+    background: linear-gradient(180deg, #7ca98298, #e0eec698);/*hijau muda-hijau kekuningan*/
+    mask-image: linear-radient(360deg, #7ca982, #e0eec6);
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0px 0px 20px rgba(0,0,0,1);
+  }
+  .frame-container {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: blocks;
+    justify-content: space-between;
+    touch-action: manipulation;
+  }
+  .frame {
+    border-radius: 25px;
+    background-color: #ffffff;
+    border: 3px solid #c2a83e;
+    width: 140px;
+    height: 140px;
+    margin-left: 32px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px rgba(0,0,0,1);
+    transition: 0.3s ease;
+  }
+  .frame:hover {
+    transform: scale(0.95, 0.95);
+    box-shadow: 0px 0px 20px rgba(255, 255, 0, 0.4);
+    border-color: #ffffff;
+  }
+.frame .click-frame .picture1 {
+  filter: brightness(100%) !important;
+}
+.frame .click-frame {
+  transform: scale(0.95) !important;
+  border: 2px solid #ffffff !important;
+  transition: all 0.2s ease; 
+}
+  .small-frame {
+    width: 60px;
+    height: 60px;
+    margin-top: 80px;
+    margin-left: 39px;
+    display: block;
+    object-fit: cover;
+    position: absolute;
+    z-index: 2;
+    transition: 0.05s ease;
+    opacity: 1;
+  }
+  .des-frame {
+    background-color: #e0eec6;
+    border-radius: 25px;
+    width: 130px;
+    height: 130px;
+    margin-right: 32px;
+    margin-top: 9px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,1);
+  }
+  .link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 3;
+  }
+  .click-frame {
+    filter: brightness: 100% !important;
+    transform: scale(0.95, 0.95);
+    box-shadow: 0px 0px 20px rgba(255,255,0,0.4);
+  }
+  #info-special {
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    z-index: 11;
+    margin-left: 55px;
+    margin-top: 370px;
+    display: flex;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+  }
+  .animasi-masuk1{/*animasi welcome!*/
+            animation: munculAtas 0.3s ease-out forwards;
+        }
+        @keyframes munculAtas {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+   .animasi-masuk2{
+            animation: munculAtas 0.5s ease-out forwards;
+        }
+        @keyframes munculAtas {
+            0% {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+  .kotak {
+            background-color: #ffffff;
+            color: white;
+            padding: 40px 60px;
+            border-radius: ;
+            text-align: ;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+  </style>
+</head>
+<body>
+  <div id="info-special">Tuhan</div>
+  <div class="black-screen"></div>
+  <div class="animasi-masuk1">
+    <p class="p1">— Welcome! —</p>
+  </div>
+  <div class="home-container">
+    <div class="square1" style="left: -250px; top: 160px;"></div>
+    <div class="square1" style="background: linear-gradient(75deg, #7ca98298, #e0eec698); top: 140px; left: 250px; width: 80px; height: 80px";></div>
+    <div class="square1" style="background: linear-gradient(175deg, #7ca98298, #e0eec698); top: 480px; right: -70px; width: 210px; height: 210px";></div>
+    <div class="square1" style="background: linear-gradient(225deg, #7ca98298, #e0eec698); top: 360px; right: 70px; width: 130px; height: 130px";></div>
+    <div class="square1" style="background: linear-gradient(175deg, #7ca98298, #e0eec698); top: 585px; left: 37px; width: 50px; height: 50px";></div>
+    <img class="profile-pic" src="Website/me.png" alt="seven">
+    <div class="animasi-masuk2">
+    <h1>Seven's Website</h1>
+    <h4 class="h4">• as Zynxx2804 •</h4></div>
+    <p class="p2">Pengangguran Handal</p>
+    <hr style="border: 0.5px solid #303030; margin-top: 58px; margin-bottom: 0px; width: 65%;">
+    <p class="p3">Menyajikan karya-karya gabut di dunia digital, dari beberapa bidang seni yang saya isengin, baik itu desain grafis, editing, musik, arsitektur dan pemrograman.</p>
+    <hr style="border: 0.5px solid #303030; margin-top: 0px; margin-bottom: 58px; width: 65%;">
+    <p class="p4">Special Thanks To:
+    </p>
+    <p class="p5" onclick="style.display: 1">Tuhan, Ibu, Gemini AI, ChatGPT, dan lain-lainnya!</p>
+    <p class="p3" style="color: #243e36; font-size: 12px; margin-top: 35px; margin-bottom: 0px";>Scroll Down To Next Content</p>
+    <p class="p3" style="color: #243e36; font-size: 12px; margin-top: 0px";>vvv</p>
+    <p class="p3" style="color: #000000; font-size: 14px; margin-top: 55px; margin-bottom: 10px";>Welcome and enjoy your trip!</p>
+    <p class="p3" style="color: #243e36; font-size: 5px; margin-top: 20px; margin-bottom: 0";>---Website created by Seven---</p>
+    <p class="p3" style="color: #243e36; font-size: 5px; margin-top: 0; margin-bottom: 0";>----------</p>
+  </div>
+  <h4 class="h4" style="box-shadow: 0px 0px 10px rgba(0,0,0,1); color: #243e36; margin-top: 40px; background: linear-gradient(90deg, #7ca982, #e0eec6);">List of Arts</h4>
+  <div class="frame-container">
+  <div class="frame">
+    <a href="myweb.html" class="link" onclick="event.preventDefault();this.parentElement.classList.add('click-frame');event.preventDefault(); setTimeout(() => { window.location.href = this.href; }, 400);">link</a>
+    <img class="picture1" src="Website/testiq.jpg">
+    <img class="small-frame" src="Website/testiqlogo.png">
+  </div>
+    <div class="des-frame">
+      <h1 style="font-size: 15px; font-weight: bolder; color: #c2a83e; background-color: #ffffff; border-radius: 5px; width: 80px; margin-top: 20px; height: 25px; margin-left: 10px; display: flex; justify-content: center; align-items: center";> 🧠 Test IQ</h1>
+      <hr style="border: solid 1px #ffffff; width: 108px; margin-bottom: 5px";>
+      <p class="p3" style="color: #243e36; font-size: 11px; width: 111px; margin-top: 0px; text-align: left";>Uji kecerdasanmu dengan sejumlah latihan sederhana dan logika meyakinkan.</p>
+    </div></div>
+  <div class="frame-container">
+  <div class="frame">
+    <a href="myweb.html" class="link" onclick="event.preventDefault(); setTimeout(() => { window.location.href = this.href; }, 400);">link</a>
+    <img class="picture2" src="Website/minecraft.jpg">
+    <img class="small-frame" src="Website/minecraft-logo.png">
+  </div>
+    <div class="des-frame">
+      <h1 style="font-size: 14px; font-weight: bolder; color: #c2a83e; background-color: #ffffff; border-radius: 5px; width: 92px; margin-top: 20px; height: 25px; margin-left: 10px; display: flex; justify-content: center; align-items: center";> ⚒️ Minecraft</h1>
+      <hr style="border: solid 1px #ffffff; width: 108px; margin-bottom: 5px";>
+      <p class="p3" style="color: #243e36; font-size: 11px; width: 111px; margin-top: 0px; text-align: left";>Koleksi-koleksi hasil building minecraft gw, selama karir survival maupun creative.</p>
+    </div></div>
+  <div class="frame-container">
+  <div class="frame">
+    <a href="myweb.html" class="link" onclick="event.preventDefault(); setTimeout(() => { window.location.href = this.href; }, 400);">link</a>
+    <img class="picture3" src="Website/photography.jpg">
+    <img class="small-frame" src="Website/photography-logo.png">
+  </div>
+    <div class="des-frame">
+      <h1 style="font-size: 12px; font-weight: bolder; color: #c2a83e; background-color: #ffffff; border-radius: 5px; width: 100px; margin-top: 20px; height: 25px; margin-left: 10px; display: flex; justify-content: center; align-items: center";> 📷 Photography</h1>
+      <hr style="border: solid 1px #ffffff; width: 108px; margin-bottom: 5px";>
+      <p class="p3" style="color: #243e36; font-size: 11px; width: 111px; margin-top: 0px; text-align: left";>Ragam hasil fotografi dari kegiatan gabut dalam menjelajahi lingkungan sekitar.</p>
+    </div></div>
+  <div class="frame-container">
+  <div class="frame" style="margin-bottom: 50px";">
+    <a href="myweb.html" class="link" onclick="event.preventDefault(); setTimeout(() => { window.location.href = this.href; }, 400);">link</a>
+    <img class="picture4" src="Website/desain-grafis.jpg">
+  </div>
+    <div class="des-frame">
+      <h1 style="font-size: 13px; font-weight: bolder; color: #c2a83e; background-color: #ffffff; border-radius: 5px; width: 111px; margin-top: 20px; height: 25px; margin-left: 10px; display: flex; justify-content: center; align-items: center";> 📏 Desain Grafis</h1>
+      <hr style="border: solid 1px #ffffff; width: 108px; margin-bottom: 5px";>
+      <p class="p3" style="color: #243e36; font-size: 11px; width: 111px; margin-top: 0px; text-align: left";>Uji kecerdasanmu dengan sejumlah latihan sederhana dan logika meyakinkan.</p>
+    </div></div>
+  <p class="footer-text">© 2026 Pria Magang. All rights reserved.</p>
+  <script>
+  const p5Element=document.querySelector('.p5');
+  const blackScreenElement=document.querySelector('.black-screen');
+  const mainBody=document.body;
+  const infoSpecial=document.getElementById('info-special');
+  p5Element.addEventListener('click', function(e)
+  {
+    event.stopPropagation();
+    infoSpecial.style.opacity='1';
+    blackScreenElement.style.backgroundColor='rgba(0,0,0,0.4)';
+    mainBody.style.overFlow='hidden';
+  });
+  mainBody.addEventListener('click', function()
+  {
+    blackScreenElement.style.backgroundColor='rgba(0,0,0,0)';
+    blackScreenElement.style.pointerEvents='none';
+    mainBody.style.overFlow='';
+    infoSpecial.style.opacity='0';
+  })
+  </script>
+</body>
+</html>
